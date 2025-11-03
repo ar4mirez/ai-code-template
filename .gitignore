@@ -1,0 +1,51 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment (if added later)
+.env
+.env.local
+
+# Node modules (if examples added)
+node_modules/
+
+# Python (if examples added)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+
+# Go (if examples added)
+vendor/
+
+# Rust (if examples added)
+target/
+Cargo.lock
+
+# Build artifacts
+dist/
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
