@@ -175,6 +175,16 @@ NODE_ENV=            # development | production | test
 - Swift → @.agent/language-guides/swift.md
 - C/C++ → @.agent/language-guides/cpp.md
 - Ruby → @.agent/language-guides/ruby.md
+- SQL → @.agent/language-guides/sql.md
+- Shell/Bash → @.agent/language-guides/shell.md
+- R → @.agent/language-guides/r.md
+- Dart/Flutter → @.agent/language-guides/dart.md
+- HTML/CSS → @.agent/language-guides/html-css.md
+- Lua → @.agent/language-guides/lua.md
+- Assembly → @.agent/language-guides/assembly.md
+- CUDA → @.agent/language-guides/cuda.md
+- Solidity → @.agent/language-guides/solidity.md
+- Zig → @.agent/language-guides/zig.md
 
 ---
 
@@ -391,7 +401,17 @@ Refs: #issue-number"
 │   ├── php.md            # PHP, Laravel, Symfony
 │   ├── swift.md          # Swift, iOS, macOS
 │   ├── cpp.md            # C/C++, systems, embedded
-│   └── ruby.md           # Ruby, Rails
+│   ├── ruby.md           # Ruby, Rails
+│   ├── sql.md            # SQL, PostgreSQL, MySQL
+│   ├── shell.md          # Shell/Bash scripting
+│   ├── r.md              # R, statistical computing
+│   ├── dart.md           # Dart, Flutter
+│   ├── html-css.md       # HTML5, CSS3, accessibility
+│   ├── lua.md            # Lua, Love2D, Neovim
+│   ├── assembly.md       # x86-64, ARM64, RISC-V
+│   ├── cuda.md           # CUDA, GPU computing
+│   ├── solidity.md       # Solidity, Ethereum, smart contracts
+│   └── zig.md            # Zig, systems programming
 ├── workflows/            # Structured workflows (pre-created)
 │   ├── create-prd.md
 │   ├── generate-tasks.md
@@ -494,10 +514,26 @@ AI will ask questions, analyze codebase, and create `.agent/project.md` with fin
 
 ## Version & Changelog
 
-**Current Version**: 1.3.0
+**Current Version**: 1.4.0
 **Last Updated**: 2025-12-13
 
 ### Changelog
+
+**v1.4.0 (2025-12-13) - Comprehensive Language Coverage**
+- ✅ Added 10 more language guides for specialized domains:
+  - SQL (PostgreSQL, MySQL, query optimization)
+  - Shell/Bash (scripting, automation, POSIX)
+  - R (statistical computing, tidyverse, Shiny)
+  - Dart (Flutter, mobile development)
+  - HTML/CSS (web standards, accessibility, BEM)
+  - Lua (scripting, Love2D, Neovim)
+  - Assembly (x86-64, ARM64, RISC-V)
+  - CUDA (GPU computing, parallel processing)
+  - Solidity (Ethereum, smart contracts, DeFi)
+  - Zig (systems programming, C interop)
+- ✅ Now supports 21 languages total
+- ✅ Updated Quick Reference with all language guides
+- ✅ Updated .agent/ directory structure documentation
 
 **v1.3.0 (2025-12-13) - Extended Language Support**
 - ✅ Added 6 new language guides covering top programming languages:
