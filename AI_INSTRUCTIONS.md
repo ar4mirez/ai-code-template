@@ -3,7 +3,8 @@
 > **Purpose**: Get started with the CLAUDE.md AI-assisted development system in 5 minutes
 >
 > **Status**: Production ready, use immediately
-> **Version**: 1.1.0
+> **Version**: 1.2.0
+> **Cross-Tool**: AGENTS.md compatible (works with Cursor, Codex, Copilot, etc.)
 
 ---
 
@@ -13,15 +14,19 @@
 # 1. Copy to your project
 cp -r /path/to/ai-claude-code/{CLAUDE.md,.agent} ./
 
-# 2. Start coding - AI automatically follows guardrails
+# 2. (Optional) For cross-tool compatibility
+ln -s CLAUDE.md AGENTS.md
+
+# 3. Start coding - AI automatically follows guardrails
 # That's it! No configuration needed.
 ```
 
 **The system works immediately:**
-- ✅ AI loads CLAUDE.md automatically (400 lines of guardrails)
+- ✅ AI loads CLAUDE.md automatically (500 lines of guardrails + operations)
 - ✅ Language guides auto-load based on file extensions
 - ✅ Workflows available when you need them
 - ✅ Progressive - starts minimal, grows with your project
+- ✅ Cross-tool: Works with any AI assistant via AGENTS.md
 
 ---
 
@@ -29,9 +34,10 @@ cp -r /path/to/ai-claude-code/{CLAUDE.md,.agent} ./
 
 An **opinionated AI development framework** with:
 - **35+ specific guardrails** (not vague suggestions)
-- **4 language guides** (TypeScript, Python, Go, Rust)
-- **4 workflows** (PRD, tasks, init, troubleshooting)
+- **5 language guides** (TypeScript, Python, Go, Rust, Kotlin)
+- **5 workflows** (PRD, tasks, init, troubleshooting, AGENTS.md generator)
 - **3 modes** (ATOMIC/FEATURE/COMPLEX - scales from bugs to architecture)
+- **Cross-tool compatible** (AGENTS.md standard)
 
 **Philosophy**: Small, validated changes. Quality enforced. Documentation grows organically.
 
@@ -190,6 +196,10 @@ AI automatically loads the right guide based on file extensions:
 - Ownership, Result<T,E>, async, zero-cost abstractions
 - [@.agent/language-guides/rust.md](.agent/language-guides/rust.md)
 
+**Kotlin** (`.kt`, `.kts`)
+- Null safety, coroutines, data classes, extension functions
+- [@.agent/language-guides/kotlin.md](.agent/language-guides/kotlin.md)
+
 **No manual selection needed** - it just works!
 
 ---
@@ -270,13 +280,15 @@ your-project/
     │   ├── typescript.md        # TypeScript/JS patterns
     │   ├── python.md            # Python patterns
     │   ├── go.md                # Go patterns
-    │   └── rust.md              # Rust patterns
+    │   ├── rust.md              # Rust patterns
+    │   └── kotlin.md            # Kotlin patterns
     │
     ├── workflows/               # On-demand workflows
     │   ├── create-prd.md        # Product Requirements Doc
     │   ├── generate-tasks.md    # Task breakdown
     │   ├── initialize-project.md # New/existing project setup
-    │   └── troubleshooting.md   # Debug guide
+    │   ├── troubleshooting.md   # Debug guide
+    │   └── generate-agents-md.md # Cross-tool compatibility
     │
     ├── tasks/                   # PRDs and task lists (complex features)
     │   └── (created on demand)
@@ -394,7 +406,7 @@ One logical change per commit. Tests must pass. Guardrails must validate.
 **A:** Explicitly remind: "Validate all guardrails from CLAUDE.md before committing." AI will check each ✓.
 
 ### Q: Can I use this with [Cursor/GitHub Copilot/other AI]?
-**A:** CLAUDE.md is designed for Claude, but the guardrails and structure work with any AI coding assistant. Just point them to CLAUDE.md.
+**A:** Yes! Create a symlink: `ln -s CLAUDE.md AGENTS.md`. This follows the AGENTS.md standard that 20+ AI tools support. Or use the workflow: `@.agent/workflows/generate-agents-md.md`
 
 ---
 
@@ -508,6 +520,9 @@ AI has full context of the system and can explain anything.
 # Get unstuck / debug
 @.agent/workflows/troubleshooting.md
 
+# Generate AGENTS.md for cross-tool compatibility
+@.agent/workflows/generate-agents-md.md
+
 # Check guardrails
 @CLAUDE.md lines 33-80
 
@@ -516,17 +531,22 @@ AI has full context of the system and can explain anything.
 @.agent/language-guides/python.md
 @.agent/language-guides/go.md
 @.agent/language-guides/rust.md
+@.agent/language-guides/kotlin.md
 
 # Check current state
 cat .agent/project.md
 cat .agent/patterns.md
 cat .agent/state.md
+
+# Cross-tool setup
+ln -s CLAUDE.md AGENTS.md
 ```
 
 ---
 
-*Version: 1.1.0*
-*Last Updated: 2025-01-15*
+*Version: 1.2.0*
+*Last Updated: 2025-12-13*
 *Status: Production Ready*
+*Cross-Tool: AGENTS.md Compatible*
 
 **For full details, see [CLAUDE.md](CLAUDE.md)**
