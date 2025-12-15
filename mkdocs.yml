@@ -226,11 +226,21 @@ nav:
       - Dart Frog: frameworks/dart-frog.md
   - Workflows:
     - Overview: workflows/index.md
-    - Initialize Project: workflows/initialize-project.md
-    - Create PRD: workflows/create-prd.md
-    - Generate Tasks: workflows/generate-tasks.md
-    - Troubleshooting: workflows/troubleshooting.md
-    - Generate AGENTS.md: workflows/generate-agents-md.md
+    - Planning:
+      - Initialize Project: workflows/initialize-project.md
+      - Create PRD: workflows/create-prd.md
+      - Generate Tasks: workflows/generate-tasks.md
+    - Quality:
+      - Code Review: workflows/code-review.md
+      - Security Audit: workflows/security-audit.md
+      - Testing Strategy: workflows/testing-strategy.md
+    - Maintenance:
+      - Cleanup Project: workflows/cleanup-project.md
+      - Refactoring: workflows/refactoring.md
+      - Dependency Update: workflows/dependency-update.md
+    - Utility:
+      - Troubleshooting: workflows/troubleshooting.md
+      - Generate AGENTS.md: workflows/generate-agents-md.md
   - Reference:
     - Cross-Tool Compatibility: reference/cross-tool.md
     - FAQ: reference/faq.md

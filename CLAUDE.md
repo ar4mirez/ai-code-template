@@ -157,11 +157,18 @@ NODE_ENV=            # development | production | test
 ✓ Tests >80% (critical) | ✓ Conventional commits | ✓ No secrets in code
 
 **Emergency Quick Links:**
-- Security issue? → See "Security" section below
+- Security issue? → .agent/workflows/security-audit.md
 - Tests failing? → .agent/workflows/troubleshooting.md
 - Stuck >30 min? → .agent/workflows/troubleshooting.md
 - Complex feature? → .agent/workflows/create-prd.md
+- Code review? → .agent/workflows/code-review.md
 - Language-specific? → .agent/language-guides/
+
+**Workflows** (on-demand):
+- Planning: initialize-project, create-prd, generate-tasks
+- Quality: code-review, security-audit, testing-strategy
+- Maintenance: cleanup-project, refactoring, dependency-update
+- Utility: troubleshooting, generate-agents-md
 
 **Load Language Guide** (automatic based on file extensions):
 - TypeScript/JavaScript → .agent/language-guides/typescript.md
@@ -492,11 +499,18 @@ Refs: #issue-number"
 │   ├── flutter.md        # Flutter, Riverpod, go_router
 │   ├── shelf.md          # Shelf, middleware HTTP server
 │   └── dart-frog.md      # Dart Frog, file-based routing
-├── workflows/            # Structured workflows (pre-created)
-│   ├── create-prd.md
-│   ├── generate-tasks.md
-│   ├── initialize-project.md
-│   └── troubleshooting.md
+├── workflows/            # Structured workflows (pre-created, 11 workflows)
+│   ├── initialize-project.md  # Project setup
+│   ├── create-prd.md          # Requirements documents
+│   ├── generate-tasks.md      # Task breakdown
+│   ├── code-review.md         # Pre-commit quality review
+│   ├── security-audit.md      # Security assessment
+│   ├── testing-strategy.md    # Test planning & coverage
+│   ├── cleanup-project.md     # Prune unused guides
+│   ├── refactoring.md         # Technical debt remediation
+│   ├── dependency-update.md   # Safe dependency updates
+│   ├── troubleshooting.md     # Debugging workflow
+│   └── generate-agents-md.md  # Cross-tool compatibility
 ├── tasks/                # PRDs and task lists (created during COMPLEX mode)
 │   ├── NNNN-prd-feature-name.md
 │   └── tasks-NNNN-prd-feature-name.md
