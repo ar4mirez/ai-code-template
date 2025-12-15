@@ -150,7 +150,7 @@ NODE_ENV=            # development | production | test
 **Task Classification:**
 - **ATOMIC** (<5 files, clear scope) → Implement directly
 - **FEATURE** (5-10 files) → Break into subtasks
-- **COMPLEX** (>10 files, new subsystem) → Use PRD workflow | @.agent/workflows/create-prd.md
+- **COMPLEX** (>10 files, new subsystem) → Use PRD workflow | .agent/workflows/create-prd.md
 
 **Common Guardrails** (validate first):
 ✓ Function ≤50 lines | ✓ File ≤300 lines | ✓ Input validation | ✓ Parameterized queries
@@ -158,79 +158,79 @@ NODE_ENV=            # development | production | test
 
 **Emergency Quick Links:**
 - Security issue? → See "Security" section below
-- Tests failing? → @.agent/workflows/troubleshooting.md
-- Stuck >30 min? → @.agent/workflows/troubleshooting.md
-- Complex feature? → @.agent/workflows/create-prd.md
-- Language-specific? → @.agent/language-guides/
+- Tests failing? → .agent/workflows/troubleshooting.md
+- Stuck >30 min? → .agent/workflows/troubleshooting.md
+- Complex feature? → .agent/workflows/create-prd.md
+- Language-specific? → .agent/language-guides/
 
 **Load Language Guide** (automatic based on file extensions):
-- TypeScript/JavaScript → @.agent/language-guides/typescript.md
-- Python → @.agent/language-guides/python.md
-- Go → @.agent/language-guides/go.md
-- Rust → @.agent/language-guides/rust.md
-- Kotlin → @.agent/language-guides/kotlin.md
-- Java → @.agent/language-guides/java.md
-- C# → @.agent/language-guides/csharp.md
-- PHP → @.agent/language-guides/php.md
-- Swift → @.agent/language-guides/swift.md
-- C/C++ → @.agent/language-guides/cpp.md
-- Ruby → @.agent/language-guides/ruby.md
-- SQL → @.agent/language-guides/sql.md
-- Shell/Bash → @.agent/language-guides/shell.md
-- R → @.agent/language-guides/r.md
-- Dart/Flutter → @.agent/language-guides/dart.md
-- HTML/CSS → @.agent/language-guides/html-css.md
-- Lua → @.agent/language-guides/lua.md
-- Assembly → @.agent/language-guides/assembly.md
-- CUDA → @.agent/language-guides/cuda.md
-- Solidity → @.agent/language-guides/solidity.md
-- Zig → @.agent/language-guides/zig.md
+- TypeScript/JavaScript → .agent/language-guides/typescript.md
+- Python → .agent/language-guides/python.md
+- Go → .agent/language-guides/go.md
+- Rust → .agent/language-guides/rust.md
+- Kotlin → .agent/language-guides/kotlin.md
+- Java → .agent/language-guides/java.md
+- C# → .agent/language-guides/csharp.md
+- PHP → .agent/language-guides/php.md
+- Swift → .agent/language-guides/swift.md
+- C/C++ → .agent/language-guides/cpp.md
+- Ruby → .agent/language-guides/ruby.md
+- SQL → .agent/language-guides/sql.md
+- Shell/Bash → .agent/language-guides/shell.md
+- R → .agent/language-guides/r.md
+- Dart/Flutter → .agent/language-guides/dart.md
+- HTML/CSS → .agent/language-guides/html-css.md
+- Lua → .agent/language-guides/lua.md
+- Assembly → .agent/language-guides/assembly.md
+- CUDA → .agent/language-guides/cuda.md
+- Solidity → .agent/language-guides/solidity.md
+- Zig → .agent/language-guides/zig.md
 
 **Load Framework Guide** (when using specific framework):
 - TypeScript/JavaScript:
-  - React → @.agent/framework-guides/react.md
-  - Next.js → @.agent/framework-guides/nextjs.md
-  - Express → @.agent/framework-guides/express.md
+  - React → .agent/framework-guides/react.md
+  - Next.js → .agent/framework-guides/nextjs.md
+  - Express → .agent/framework-guides/express.md
 - Python:
-  - Django → @.agent/framework-guides/django.md
-  - FastAPI → @.agent/framework-guides/fastapi.md
-  - Flask → @.agent/framework-guides/flask.md
+  - Django → .agent/framework-guides/django.md
+  - FastAPI → .agent/framework-guides/fastapi.md
+  - Flask → .agent/framework-guides/flask.md
 - Go:
-  - Gin → @.agent/framework-guides/gin.md
-  - Echo → @.agent/framework-guides/echo.md
-  - Fiber → @.agent/framework-guides/fiber.md
+  - Gin → .agent/framework-guides/gin.md
+  - Echo → .agent/framework-guides/echo.md
+  - Fiber → .agent/framework-guides/fiber.md
 - Rust:
-  - Axum → @.agent/framework-guides/axum.md
-  - Actix-web → @.agent/framework-guides/actix-web.md
-  - Rocket → @.agent/framework-guides/rocket.md
+  - Axum → .agent/framework-guides/axum.md
+  - Actix-web → .agent/framework-guides/actix-web.md
+  - Rocket → .agent/framework-guides/rocket.md
 - Kotlin:
-  - Spring Boot (Kotlin) → @.agent/framework-guides/spring-boot-kotlin.md
-  - Ktor → @.agent/framework-guides/ktor.md
-  - Android Compose → @.agent/framework-guides/android-compose.md
+  - Spring Boot (Kotlin) → .agent/framework-guides/spring-boot-kotlin.md
+  - Ktor → .agent/framework-guides/ktor.md
+  - Android Compose → .agent/framework-guides/android-compose.md
 - Java:
-  - Spring Boot → @.agent/framework-guides/spring-boot.md
-  - Quarkus → @.agent/framework-guides/quarkus.md
-  - Micronaut → @.agent/framework-guides/micronaut.md
+  - Spring Boot → .agent/framework-guides/spring-boot-java.md
+  - Quarkus → .agent/framework-guides/quarkus.md
+  - Micronaut → .agent/framework-guides/micronaut.md
 - C#:
-  - ASP.NET Core → @.agent/framework-guides/aspnet-core.md
-  - Blazor → @.agent/framework-guides/blazor.md
-  - Unity → @.agent/framework-guides/unity.md
+  - ASP.NET Core → .agent/framework-guides/aspnet-core.md
+  - Blazor → .agent/framework-guides/blazor.md
+  - Unity → .agent/framework-guides/unity.md
 - PHP:
-  - Laravel → @.agent/framework-guides/laravel.md
-  - Symfony → @.agent/framework-guides/symfony.md
-  - WordPress → @.agent/framework-guides/wordpress.md
+  - Laravel → .agent/framework-guides/laravel.md
+  - Symfony → .agent/framework-guides/symfony.md
+  - WordPress → .agent/framework-guides/wordpress.md
 - Swift:
-  - SwiftUI → @.agent/framework-guides/swiftui.md
-  - UIKit → @.agent/framework-guides/uikit.md
-  - Vapor → @.agent/framework-guides/vapor.md
+  - SwiftUI → .agent/framework-guides/swiftui.md
+  - UIKit → .agent/framework-guides/uikit.md
+  - Vapor → .agent/framework-guides/vapor.md
 - Ruby:
-  - Rails → @.agent/framework-guides/rails.md
-  - Sinatra → @.agent/framework-guides/sinatra.md
-  - Hanami → @.agent/framework-guides/hanami.md
+  - Rails → .agent/framework-guides/rails.md
+  - Sinatra → .agent/framework-guides/sinatra.md
+  - Hanami → .agent/framework-guides/hanami.md
 - Dart:
-  - Flutter → @.agent/framework-guides/flutter.md
-  - Shelf → @.agent/framework-guides/shelf.md
-  - Dart Frog → @.agent/framework-guides/dart-frog.md
+  - Flutter → .agent/framework-guides/flutter.md
+  - Shelf → .agent/framework-guides/shelf.md
+  - Dart Frog → .agent/framework-guides/dart-frog.md
 
 ---
 
@@ -331,8 +331,8 @@ For architecture changes, major refactors, new systems:
 - Well-defined refactoring
 
 **Workflow:**
-1. Use `@.agent/workflows/create-prd.md` to define requirements
-2. Use `@.agent/workflows/generate-tasks.md` to break down implementation
+1. Use `.agent/workflows/create-prd.md` to define requirements
+2. Use `.agent/workflows/generate-tasks.md` to break down implementation
 3. Implement tasks step-by-step with verification checkpoints
 4. See `.agent/workflows/README.md` for full documentation
 
@@ -360,7 +360,7 @@ For architecture changes, major refactors, new systems:
 ### Stage 2: Implementation
 **Always:**
 - Write tests first (TDD) or alongside code
-- Load language-specific guide: @.agent/language-guides/{language}.md
+- Load language-specific guide: .agent/language-guides/{language}.md
 - Follow language/framework idioms
 - Validate against guardrails continuously
 - Keep changes focused (resist scope creep)
@@ -552,9 +552,9 @@ Refs: #issue-number"
 
 ## Initialization
 
-**For new projects:** Use `@.agent/workflows/initialize-project.md`
+**For new projects:** Use `.agent/workflows/initialize-project.md`
 
-**For existing projects:** Use `@.agent/workflows/initialize-project.md`
+**For existing projects:** Use `.agent/workflows/initialize-project.md`
 
 AI will ask questions, analyze codebase, and create `.agent/project.md` with findings.
 
@@ -562,7 +562,7 @@ AI will ask questions, analyze codebase, and create `.agent/project.md` with fin
 
 ## When Stuck
 
-**See:** `@.agent/workflows/troubleshooting.md`
+**See:** `.agent/workflows/troubleshooting.md`
 
 **Quick recovery:**
 1. STOP trying random solutions (>30 min = stuck)
